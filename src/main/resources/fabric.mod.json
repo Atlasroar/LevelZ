@@ -56,7 +56,9 @@
     "libz": "*",
     "autotag-convention": ">=${autotag_version}"
   },
-  "suggests": {},
+  "suggests": {
+    "modmenu": "*"
+  },
   "custom": {
     "waila:plugins": {
       "id": "wandererz:plugin",
