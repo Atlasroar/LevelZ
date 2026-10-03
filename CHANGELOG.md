@@ -1,3 +1,8 @@
+## 2.6.0
+### Changed:
+- All mod config files now live under a dedicated `config/WandererZ/` subfolder instead of being scattered directly in `config/` (e.g. `config/WandererZ/wandererz.json5`, `config/WandererZ/jobsaddon.json5`, etc.) for a cleaner config directory.
+- Existing legacy config files (e.g. `config/wandererz.json5`) are automatically migrated into `config/WandererZ/` the first time you launch with this version — your settings are preserved, no manual action needed.
+
 ## 2.5.1
 ### Added:
 - Added optional Food Spoilage datapack support (no hard dependency) for food items from several popular farming/cooking mods, so they spoil (or are correctly exempted from spoiling) automatically when installed alongside WandererZ:

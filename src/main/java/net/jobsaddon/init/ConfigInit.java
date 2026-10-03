@@ -14,6 +14,7 @@ import net.jobsaddon.JobsAddonMain;
 import net.jobsaddon.config.JobsAddonConfig;
 import net.jobsaddon.network.JobsClientPacket;
 import net.jobsaddon.network.JobsServerPacket;
+import net.wandererz.util.ConfigMigration;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.ActionResult;
@@ -23,6 +24,7 @@ public class ConfigInit {
     public static JobsAddonConfig CONFIG = new JobsAddonConfig();
 
     public static void init() {
+        ConfigMigration.migrate("jobsaddon", "json5");
         AutoConfig.register(JobsAddonConfig.class, JanksonConfigSerializer::new);
         CONFIG = AutoConfig.getConfigHolder(JobsAddonConfig.class).getConfig();
 
