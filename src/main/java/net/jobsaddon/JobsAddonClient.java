@@ -11,6 +11,9 @@ public class JobsAddonClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableJobsAddon) {
+            return;
+        }
         RenderInit.init();
         JobsClientPacket.init();
     }

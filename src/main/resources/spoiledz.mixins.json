@@ -13,6 +13,7 @@
     "InventoryMixin",
     "LootTableMixin",
     "ItemScattererMixin",
+    "ItemEntityMixin",
     "CampfireBlockEntityMixin",
     "AbstractFurnaceBlockEntityMixin",
     "FishingBobberEntityMixin",

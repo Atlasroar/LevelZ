@@ -18,6 +18,9 @@ public class RpgDifficultyClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableRpgDifficulty) {
+            return;
+        }
         HudRenderCallback.EVENT.register((drawContext, tickDelta) -> {
             MinecraftClient client = MinecraftClient.getInstance();
             if (!client.options.hudHidden) {

@@ -41,6 +41,9 @@ public class TieredClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableTiered) {
+            return;
+        }
         registerAttributeSyncHandler();
         registerReforgeItemSyncHandler();
         HandledScreens.<ReforgeScreenHandler, ReforgeScreen>register(Tiered.REFORGE_SCREEN_HANDLER_TYPE, ReforgeScreen::new);

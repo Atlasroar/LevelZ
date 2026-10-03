@@ -225,6 +225,30 @@ public class WandererzConfig implements ConfigData, ConfigSync {
     @ConfigEntry.Gui.RequiresRestart
     public boolean smithingProgression = true;
 
+    // Integration toggles - merged addons can each be fully disabled.
+    // Disabling an integration skips its registration (commands, items, jobs,
+    // criteria, recipes, network packets, screens) on the next restart.
+    @ConfigEntry.Category("integrations")
+    @ConfigEntry.Gui.RequiresRestart
+    @Comment("Enable the merged JobsAddon integration (jobs, job criteria, job-based bonuses)")
+    public boolean enableJobsAddon = true;
+    @ConfigEntry.Category("integrations")
+    @ConfigEntry.Gui.RequiresRestart
+    @Comment("Enable the merged RpgDifficulty integration")
+    public boolean enableRpgDifficulty = true;
+    @ConfigEntry.Category("integrations")
+    @ConfigEntry.Gui.RequiresRestart
+    @Comment("Enable the merged Tiered equipment integration")
+    public boolean enableTiered = true;
+    @ConfigEntry.Category("integrations")
+    @ConfigEntry.Gui.RequiresRestart
+    @Comment("Enable the merged PartyAddon integration")
+    public boolean enablePartyAddon = true;
+    @ConfigEntry.Category("integrations")
+    @ConfigEntry.Gui.RequiresRestart
+    @Comment("Enable the merged SpoiledZ food spoilage integration")
+    public boolean enableSpoiledZ = true;
+
     @Override
     public void updateConfig(ConfigData data) {
         ConfigInit.CONFIG = (WandererzConfig) data;

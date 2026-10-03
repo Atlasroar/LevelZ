@@ -1,3 +1,11 @@
+## 2.5.0
+### Changed:
+- Fully spoiled food (0% freshness) now turns into Rotten Flesh instead of becoming a "spoiled" variant of itself
+- Food Spoilage's negative effects (Poison/Nausea) now only apply once food has 25% freshness or less remaining, and are always the same fixed effect/duration instead of randomly chancing on and varying in strength
+- Each merged integration (JobsAddon, RpgDifficulty, Tiered, PartyAddon, SpoiledZ) can now be individually enabled/disabled from the WandererZ config screen's new "Integrations" tab (requires a restart to take effect)
+### Removed:
+- Removed the now-unused `effectChance` Food Spoilage config option (effects are no longer chance-based)
+
 ## 2.4.1
 ### Fixed:
 - Fixed a server crash (`NullPointerException` in `ServerWorldMixin`) on world load when Serene Seasons (without Fabric Seasons) was the installed season provider, caused by an operator-precedence bug in the season-change check introduced in v2.4.0

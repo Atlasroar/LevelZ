@@ -2,7 +2,6 @@ package net.spoiledz.config;
 
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
-import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 @Config(name = "spoiledz")
@@ -13,9 +12,7 @@ public class SpoiledZConfig implements ConfigData {
     public int seasonSpoilage = 4;
     @Comment("On spoiled craft, reset spoiling time")
     public boolean freshCrafting = false;
-    @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
-    public int effectChance = 35;
-    @Comment("In ticks")
+    @Comment("In ticks. Negative effects are always applied (never random) once food has 25% freshness or less remaining")
     public int effectDuration = 400;
 
 }

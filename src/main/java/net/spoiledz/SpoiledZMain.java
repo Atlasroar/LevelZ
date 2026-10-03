@@ -14,6 +14,9 @@ public class SpoiledZMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableSpoiledZ) {
+            return;
+        }
         ConfigInit.init();
         TagInit.init();
         EventInit.init();
