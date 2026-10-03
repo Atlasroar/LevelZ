@@ -10,6 +10,9 @@ public class SpoiledZClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableSpoiledZ) {
+            return;
+        }
         ModelProviderInit.init();
     }
 

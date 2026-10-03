@@ -75,6 +75,9 @@ public class Tiered implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableTiered) {
+            return;
+        }
         ConfigInit.init();
         TieredItemTags.init();
         CustomEntityAttributes.init();

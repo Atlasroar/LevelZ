@@ -14,6 +14,9 @@ public class PartyAddonMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enablePartyAddon) {
+            return;
+        }
         ConfigInit.init();
         EventInit.init();
         CommandInit.init();

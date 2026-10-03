@@ -18,6 +18,9 @@ public class JobsAddonMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableJobsAddon) {
+            return;
+        }
         JsonReaderInit.init();
         CommandInit.init();
         ConfigInit.init();

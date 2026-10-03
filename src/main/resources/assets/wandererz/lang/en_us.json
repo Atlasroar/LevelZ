@@ -22,6 +22,13 @@
   "text.autoconfig.wandererz.category.level_settings": "Level Settings",
   "text.autoconfig.wandererz.category.experience_settings": "Experience Settings",
   "text.autoconfig.wandererz.category.progression_settings": "Progression Settings",
+  "text.autoconfig.wandererz.category.integrations": "Integrations",
+
+  "text.autoconfig.wandererz.option.enableJobsAddon": "Enable JobsAddon",
+  "text.autoconfig.wandererz.option.enableRpgDifficulty": "Enable RpgDifficulty",
+  "text.autoconfig.wandererz.option.enableTiered": "Enable Tiered",
+  "text.autoconfig.wandererz.option.enablePartyAddon": "Enable PartyAddon",
+  "text.autoconfig.wandererz.option.enableSpoiledZ": "Enable SpoiledZ (Food Spoilage)",
 
   "text.autoconfig.wandererz.option.useIndependentExp": "Use Independent XP",
   "text.autoconfig.wandererz.option.devMode": "Dev Mode",

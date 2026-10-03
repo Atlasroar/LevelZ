@@ -103,6 +103,16 @@ public class SpoiledUtil {
         return false;
     }
 
+    // True once a stack has reached 0% freshness (fully spoiled).
+    public static boolean isFullySpoiled(World world, ItemStack stack) {
+        return isSpoilable(stack) && hasSpoilage(stack) && getSpoilingTime(world, stack) >= 4;
+    }
+
+    // Fully spoiled food simply becomes rotten flesh instead of staying a "spoiled" variant of itself.
+    public static ItemStack getRottenFleshReplacement(ItemStack stack) {
+        return new ItemStack(Items.ROTTEN_FLESH, stack.getCount());
+    }
+
     public static boolean isSpoilable(ItemStack stack) {
         if ((stack.isFood() || stack.isIn(TagInit.SPOILING_ITEMS)) && !stack.isIn(TagInit.NON_SPOILING_ITEMS)) {
             return true;

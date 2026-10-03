@@ -21,10 +21,12 @@ system built directly in — no separate addon downloads required.
   XP picked up by any group member, with a configurable group-size cap, group bonuses, and an on-screen HUD.
 - **Food Spoilage** — food items spoil over time based on the current season (via Fabric Seasons or Serene
   Seasons, either one works), with cake, furnace/campfire/crafting results, items on the ground, and
-  container contents all tracked; spoiled food can be fed to composters, animals, or thrown away.
+  container contents all tracked; fully spoiled (0% freshness) food turns into Rotten Flesh, and eating food
+  at 25% freshness or lower always inflicts the same fixed Poison/Nausea effect (never random).
 - **Deep configurability** — every system (leveling, jobs, difficulty scaling, tiering, parties, spoilage)
   ships its own config screen via Mod Menu / Cloth Config, and most default settings can be overridden
-  per-world with datapacks.
+  per-world with datapacks. Each merged integration (Jobs, RPG Difficulty, Tiered, Party, Food Spoilage) can
+  also be individually toggled on/off from the WandererZ config's "Integrations" tab (requires a restart).
 - **Wide compatibility** — built-in support/compat hooks for Mod Menu, Trinkets, REI, EMI, Jade, WTHIT,
   Origins, TreeChop, Farmer's Delight, Expanded Delight, Vinery, FallingTree, Numismatic Overhaul,
   EasyAnvils, TooltipFix, Clumps, Xaero's World Map, Capsaicin (bundled), and more.

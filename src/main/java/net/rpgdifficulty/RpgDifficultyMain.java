@@ -23,6 +23,9 @@ public class RpgDifficultyMain implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        if (!net.wandererz.init.ConfigInit.CONFIG.enableRpgDifficulty) {
+            return;
+        }
         AutoConfig.register(RpgDifficultyConfig.class, GsonConfigSerializer::new);
         CONFIG = AutoConfig.getConfigHolder(RpgDifficultyConfig.class).getConfig();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new DifficultyLoader());
