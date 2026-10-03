@@ -137,6 +137,16 @@ dependencies {
 	modCompileOnly ("curse.maven:easy-anvils-682567:4556543") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
+
+	// PartyAddon (merged from PartyAddon)
+	// Clumps
+	modCompileOnly ('maven.modrinth:clumps:l3neajc5') {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	// Xaero's World Map
+	modCompileOnly ('maven.modrinth:xaeros-world-map:1.34.1_Fabric_1.20') {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
 }
 
 

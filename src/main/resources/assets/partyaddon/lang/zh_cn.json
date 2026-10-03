@@ -1,0 +1,42 @@
+{
+  "text.autoconfig.partyaddon.title": "PartyAddon设置",
+  "text.autoconfig.partyaddon.option.invitationTime": "邀请持续时间",
+  "text.autoconfig.partyaddon.option.groupSize": "队伍规模",
+  "text.autoconfig.partyaddon.option.groupXpBonus": "队伍经验奖励",
+  "text.autoconfig.partyaddon.option.fullGroupBonus": "全队奖励",
+  "text.autoconfig.partyaddon.option.hudPosX": "界面X坐标",
+  "text.autoconfig.partyaddon.option.hudPosY": "界面Y坐标",
+  "text.autoconfig.partyaddon.option.hudOpacity": "界面透明度",
+  "text.autoconfig.partyaddon.option.showGroupHud": "显示队伍界面",
+  "text.autoconfig.partyaddon.option.distributeVanillaXP": "获取原版经验",
+  "text.autoconfig.partyaddon.option.distributeLevelZXP": "获取WandererZ经验",
+
+  "screen.partyaddon.party_screen": "队伍",
+  "searchPlayer.search": "玩家名称",
+
+  "text.partyaddon.gui.title": "队伍",
+  "text.partyaddon.gui.player_list": "玩家列表",
+  "text.partyaddon.gui.invitation": "邀请",
+  "text.partyaddon.gui.invitation_by_player": "的队伍",
+  "text.partyaddon.gui.group": "队伍",
+  "text.partyaddon.gui.info": "信息",
+  "text.partyaddon.gui.empty_info": "-",
+  "text.partyaddon.gui.info_player_count": "%s 队伍成员",
+  "text.partyaddon.gui.info_experience": "%s%% 经验奖励",
+  "text.partyaddon.gui.full_group_bonus": "全队",
+  "text.partyaddon.gui.full_group_bonus_amount": "%s%% 经验奖励",
+
+  "text.partyaddon.invitation": "%s 邀请你加入队伍",
+  "text.partyaddon.accepted_invitation": "%s 假如了你的队伍",
+  "text.partyaddon.declined_invitation": "%s 拒绝了你的邀请",
+  "text.partyaddon.group_is_full": "%s的队伍已满",
+  "text.partyaddon.left_group": "%s 离开了队伍",
+  "text.partyaddon.leave_group": "你离开了队伍",
+  "text.partyaddon.kicked": "你被踢出了队伍",
+  "text.partyaddon.no_invitation": "你没有需要接受的邀请",
+  "text.partyaddon.no_group": "你尚未组队",
+
+  "text.partyaddon.hud.group": "队伍",
+  "text.partyaddon.hud.name": "Lv. %s %s",
+  "text.partyaddon.hud.empty_name": "-"
+}
