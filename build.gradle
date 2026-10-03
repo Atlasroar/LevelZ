@@ -17,6 +17,7 @@ repositories {
     maven { url "https://maven.jamieswhiteshirt.com/libs-release/" }
     maven { url "https://maven.bai.lol" }
     maven { url "https://maven.ladysnake.org/releases" }
+    maven { url "https://maven.willbl.dev/releases" }
 }
 
 dependencies {
@@ -119,6 +120,23 @@ dependencies {
 	// PlayerEx
 	modCompileOnly "maven.modrinth:data-attributes-directors-cut:2.0.0+1.20.1-beta.9-fabric"
 	modCompileOnly "maven.modrinth:playerex-directors-cut:4.0.0+1.20.1-alpha.13"
+
+	// Tiered (merged from Tiered)
+	// Reach Entity Attributes (bundled)
+	modImplementation include ("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_attributes_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	// AutoTag (required separate dependency, provides item tags used by Tiered)
+	modImplementation ("com.github.apace100:autotag-api:${project.autotag_version}")
+	modImplementation ("com.github.apace100:autotag:${project.autotag_version}")
+	// TooltipFix
+	modCompileOnly ("maven.modrinth:tooltipfix:1.1.1-1.19.3") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	// EasyAnvils
+	modCompileOnly ("curse.maven:easy-anvils-682567:4556543") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
 }
 
 
@@ -126,7 +144,7 @@ processResources {
     inputs.property "version", project.version
 
     filesMatching("fabric.mod.json") {
-		expand "version": project.version, "fabric_version": project.fabric_version, "loader_version": project.loader_version, "minecraft_version": project.minecraft_version, "cloth_config_version": project.cloth_config_version
+		expand "version": project.version, "fabric_version": project.fabric_version, "loader_version": project.loader_version, "minecraft_version": project.minecraft_version, "cloth_config_version": project.cloth_config_version, "autotag_version": project.autotag_version
 	}
 }
 
