@@ -7,7 +7,6 @@ import java.util.Map;
 
 import org.jetbrains.annotations.Nullable;
 
-import io.github.lucaargolo.seasons.FabricSeasons;
 import net.minecraft.block.BlockState;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -19,6 +18,7 @@ import net.minecraft.world.PersistentState;
 import net.minecraft.world.World;
 import net.spoiledz.SpoiledZMain;
 import net.spoiledz.access.ServerWorldAccess;
+import net.spoiledz.compat.season.SeasonProviderInit;
 import net.spoiledz.init.ConfigInit;
 import net.spoiledz.init.TagInit;
 
@@ -28,12 +28,12 @@ public class SpoiledUtil {
 
     // 0 = 0%, 1=25%, 2=50%, 3=75%, 4=100%
     public static int getSpoilingTime(World world, ItemStack stack) {
-        if (world != null && stack != null && stack.hasNbt() && stack.getNbt().contains("Season")) {
+        if (world != null && stack != null && stack.hasNbt() && stack.getNbt().contains("Season") && SeasonProviderInit.PROVIDER != null) {
             String itemSeason = stack.getNbt().getString("Season");
             int itemYear = stack.getNbt().getInt("Year");
 
-            int currentYear = (int) (world.getTimeOfDay() / (FabricSeasons.getCurrentSeason(world).getSeasonLength() * 4));
-            String currentSeason = FabricSeasons.getCurrentSeason(world).asString();
+            int currentYear = (int) (world.getTimeOfDay() / (SeasonProviderInit.PROVIDER.getSeasonLengthTicks(world) * 4));
+            String currentSeason = SeasonProviderInit.PROVIDER.getSeasonId(world);
 
             int yearDiff = currentYear - itemYear;
 
@@ -59,10 +59,10 @@ public class SpoiledUtil {
     }
 
     public static void setItemStackSpoilage(World world, ItemStack stack, @Nullable List<ItemStack> recipeStacks) {
-        if (!world.isClient && ((stack.isFood() || stack.isIn(TagInit.SPOILING_ITEMS)) && !stack.isIn(TagInit.NON_SPOILING_ITEMS))) {
+        if (!world.isClient && SeasonProviderInit.PROVIDER != null && ((stack.isFood() || stack.isIn(TagInit.SPOILING_ITEMS)) && !stack.isIn(TagInit.NON_SPOILING_ITEMS))) {
             if (recipeStacks != null && !recipeStacks.isEmpty() && !ConfigInit.CONFIG.freshCrafting) {
-                int year = (int) (world.getTimeOfDay() / (FabricSeasons.getCurrentSeason(world).getSeasonLength() * 4));
-                String season = FabricSeasons.getCurrentSeason(world).asString();
+                int year = (int) (world.getTimeOfDay() / (SeasonProviderInit.PROVIDER.getSeasonLengthTicks(world) * 4));
+                String season = SeasonProviderInit.PROVIDER.getSeasonId(world);
 
                 for (int i = 0; i < recipeStacks.size(); i++) {
                     ItemStack inputStack = recipeStacks.get(i);
@@ -89,8 +89,8 @@ public class SpoiledUtil {
                 stack.setNbt(nbtCompound);
             } else if (!hasSpoilage(stack) || ConfigInit.CONFIG.freshCrafting) {
                 NbtCompound nbtCompound = stack.hasNbt() ? stack.getNbt() : new NbtCompound();
-                nbtCompound.putString("Season", FabricSeasons.getCurrentSeason(world).asString());
-                nbtCompound.putInt("Year", (int) (world.getTimeOfDay() / (FabricSeasons.getCurrentSeason(world).getSeasonLength() * 4)));
+                nbtCompound.putString("Season", SeasonProviderInit.PROVIDER.getSeasonId(world));
+                nbtCompound.putInt("Year", (int) (world.getTimeOfDay() / (SeasonProviderInit.PROVIDER.getSeasonLengthTicks(world) * 4)));
                 stack.setNbt(nbtCompound);
             }
         }

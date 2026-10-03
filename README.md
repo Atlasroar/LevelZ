@@ -19,9 +19,9 @@ system built directly in — no separate addon downloads required.
   your smithing skill level and luck).
 - **Party** — form parties with other players (invite, join, leave, kick), and share vanilla and WandererZ
   XP picked up by any group member, with a configurable group-size cap, group bonuses, and an on-screen HUD.
-- **Food Spoilage** — food items spoil over time based on the current season, with cake, furnace/campfire/
-  crafting results, items on the ground, and container contents all tracked; spoiled food can be fed to
-  composters, animals, or thrown away.
+- **Food Spoilage** — food items spoil over time based on the current season (via Fabric Seasons or Serene
+  Seasons, either one works), with cake, furnace/campfire/crafting results, items on the ground, and
+  container contents all tracked; spoiled food can be fed to composters, animals, or thrown away.
 - **Deep configurability** — every system (leveling, jobs, difficulty scaling, tiering, parties, spoilage)
   ships its own config screen via Mod Menu / Cloth Config, and most default settings can be overridden
   per-world with datapacks.
@@ -34,11 +34,14 @@ system built directly in — no separate addon downloads required.
 WandererZ is a mod built for the [Fabric Loader](https://fabricmc.net/). It requires
 [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api),
 [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config),
-[LibZ](https://www.curseforge.com/minecraft/mc-mods/libz),
-[AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag), and
-[Fabric Seasons](https://modrinth.com/mod/fabric-seasons) to be installed separately; all other
-dependencies (including Capsaicin, which powers the food spoilage system) are bundled or optional
-compatibility hooks installed with the mod.
+[LibZ](https://www.curseforge.com/minecraft/mc-mods/libz), and
+[AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag) to be installed separately. The food
+spoilage system additionally needs a season/calendar provider — either
+[Fabric Seasons](https://modrinth.com/mod/fabric-seasons) or [Serene Seasons](https://modrinth.com/mod/serene-seasons)
+(which also requires [GlitchCore](https://modrinth.com/mod/glitchcore)) — installed separately; either one works,
+and if neither is present, spoilage timing is simply disabled rather than crashing. All other dependencies
+(including Capsaicin, which powers the food spoilage system) are bundled or optional compatibility hooks
+installed with the mod.
 [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) is optional but recommended — if present,
 it gives you an in-game "WandererZ" entry that opens a chooser for the WandererZ, Jobs, RPG Difficulty,
 Tiered, Party, and Food Spoilage config screens. Without it, those configs can still be edited directly via

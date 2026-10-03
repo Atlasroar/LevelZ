@@ -3,6 +3,7 @@ package net.spoiledz;
 import java.util.List;
 
 import net.fabricmc.api.ModInitializer;
+import net.spoiledz.compat.season.SeasonProviderInit;
 import net.spoiledz.init.ConfigInit;
 import net.spoiledz.init.EventInit;
 import net.spoiledz.init.TagInit;
@@ -16,6 +17,7 @@ public class SpoiledZMain implements ModInitializer {
         ConfigInit.init();
         TagInit.init();
         EventInit.init();
+        SeasonProviderInit.init();
     }
 
 }
