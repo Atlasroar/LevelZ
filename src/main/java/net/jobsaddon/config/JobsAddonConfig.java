@@ -8,7 +8,7 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-@Config(name = "jobsaddon")
+@Config(name = "WandererZ/jobsaddon")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
 public class JobsAddonConfig implements ConfigData {
 

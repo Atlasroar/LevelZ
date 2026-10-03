@@ -5,7 +5,7 @@ import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-@Config(name = "tiered")
+@Config(name = "WandererZ/tiered")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
 public class TieredConfig implements ConfigData {
 

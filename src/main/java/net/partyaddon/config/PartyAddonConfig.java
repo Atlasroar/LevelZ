@@ -4,7 +4,7 @@ import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
-@Config(name = "partyaddon")
+@Config(name = "WandererZ/partyaddon")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
 public class PartyAddonConfig implements ConfigData {
 

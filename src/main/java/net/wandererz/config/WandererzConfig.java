@@ -7,7 +7,7 @@ import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 import net.wandererz.init.ConfigInit;
 import net.libz.api.ConfigSync;
 
-@Config(name = "wandererz")
+@Config(name = "WandererZ/wandererz")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
 public class WandererzConfig implements ConfigData, ConfigSync {
 

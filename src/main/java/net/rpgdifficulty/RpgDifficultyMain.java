@@ -12,6 +12,7 @@ import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import net.rpgdifficulty.config.RpgDifficultyConfig;
 import net.rpgdifficulty.data.DifficultyLoader;
+import net.wandererz.util.ConfigMigration;
 
 public class RpgDifficultyMain implements ModInitializer {
 
@@ -26,6 +27,7 @@ public class RpgDifficultyMain implements ModInitializer {
         if (!net.wandererz.init.ConfigInit.CONFIG.enableRpgDifficulty) {
             return;
         }
+        ConfigMigration.migrate("rpgdifficulty", "json");
         AutoConfig.register(RpgDifficultyConfig.class, GsonConfigSerializer::new);
         CONFIG = AutoConfig.getConfigHolder(RpgDifficultyConfig.class).getConfig();
         ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new DifficultyLoader());
