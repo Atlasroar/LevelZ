@@ -5,6 +5,1010 @@
         "minecraft:egg",
         "minecraft:milk_bucket",
         "minecraft:honey_bottle",
-        "minecraft:cake"
+        "minecraft:cake",
+        {
+            "id": "farmersdelight:fried_egg",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:milk_bottle",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:hot_cocoa",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:apple_cider",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:melon_juice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:tomato_sauce",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:wheat_dough",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:raw_pasta",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:pumpkin_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cabbage_leaf",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:minced_beef",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:beef_patty",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:chicken_cuts",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cooked_chicken_cuts",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:bacon",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cooked_bacon",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cod_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cooked_cod_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:salmon_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cooked_salmon_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:mutton_chops",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cooked_mutton_chops",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:ham",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:pie_crust",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:apple_pie",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:sweet_berry_cheesecake",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:chocolate_pie",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cake_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:apple_pie_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:sweet_berry_cheesecake_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:chocolate_pie_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:pumpkin_pie_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:sweet_berry_cookie",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:honey_cookie",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:melon_popsicle",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:glow_berry_custard",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:fruit_salad",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:mixed_salad",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:nether_salad",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:barbecue_stick",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:egg_sandwich",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:chicken_sandwich",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:hamburger",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:bacon_sandwich",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:mutton_wrap",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:dumplings",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:stuffed_potato",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cabbage_rolls",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:salmon_roll",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cod_roll",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:kelp_roll",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:kelp_roll_slice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cooked_rice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:bone_broth",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:beef_stew",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:chicken_soup",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:vegetable_soup",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:fish_stew",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:fried_rice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:pumpkin_soup",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:baked_cod_stew",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:noodle_soup",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:onion_soup",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:bacon_and_eggs",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:pasta_with_meatballs",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:pasta_with_mutton_chop",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:mushroom_rice",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:roasted_mutton_chops",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:vegetable_noodles",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:steak_and_potatoes",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:ratatouille",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:squid_ink_pasta",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:grilled_salmon",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:roast_chicken",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:stuffed_pumpkin",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:honey_glazed_ham",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:shepherds_pie",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:gleaming_salad",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:cabbage",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:tomato",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:onion",
+            "required": false
+        },
+        {
+            "id": "farmersdelight:rice",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:tea_blossom",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:green_tea_leaf",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:yerba_mate_leaf",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:rooibos_leaf",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:lavender_blossom",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:coffee_beans",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:green_tea",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:black_tea",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:lavender_tea",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:yerba_mate_tea",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:oolong_tea",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:rooibos_tea",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:hibiscus_tea",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:milk_coffee",
+            "required": false
+        },
+        {
+            "id": "herbalbrews:coffee",
+            "required": false
+        },
+        {
+            "id": "vinery:red_grape",
+            "required": false
+        },
+        {
+            "id": "vinery:white_grape",
+            "required": false
+        },
+        {
+            "id": "vinery:savanna_grapes_red",
+            "required": false
+        },
+        {
+            "id": "vinery:savanna_grapes_white",
+            "required": false
+        },
+        {
+            "id": "vinery:taiga_grapes_red",
+            "required": false
+        },
+        {
+            "id": "vinery:taiga_grapes_white",
+            "required": false
+        },
+        {
+            "id": "vinery:jungle_grapes_red",
+            "required": false
+        },
+        {
+            "id": "vinery:jungle_grapes_white",
+            "required": false
+        },
+        {
+            "id": "vinery:cherry",
+            "required": false
+        },
+        {
+            "id": "vinery:apple_juice",
+            "required": false
+        },
+        {
+            "id": "vinery:red_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:white_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:red_savanna_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:white_savanna_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:red_taiga_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:white_taiga_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:red_jungle_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:white_jungle_grapejuice",
+            "required": false
+        },
+        {
+            "id": "vinery:apple_mash",
+            "required": false
+        },
+        {
+            "id": "meadow:cheesecake_slice",
+            "required": false
+        },
+        {
+            "id": "meadow:cheese_tart_slice",
+            "required": false
+        },
+        {
+            "id": "meadow:piece_of_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:piece_of_sheep_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:piece_of_grain_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:piece_of_amethyst_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:piece_of_buffalo_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:piece_of_goat_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:piece_of_warped_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:cheese_sandwich",
+            "required": false
+        },
+        {
+            "id": "meadow:cheese_roll",
+            "required": false
+        },
+        {
+            "id": "meadow:cheese_stick",
+            "required": false
+        },
+        {
+            "id": "meadow:sausage_with_cheese",
+            "required": false
+        },
+        {
+            "id": "meadow:raw_buffalo_meat",
+            "required": false
+        },
+        {
+            "id": "meadow:cooked_buffalo_meat",
+            "required": false
+        },
+        {
+            "id": "meadow:wooden_milk_bucket",
+            "required": false
+        },
+        {
+            "id": "meadow:wooden_sheep_milk_bucket",
+            "required": false
+        },
+        {
+            "id": "meadow:wooden_buffalo_milk_bucket",
+            "required": false
+        },
+        {
+            "id": "meadow:wooden_goat_milk_bucket",
+            "required": false
+        },
+        {
+            "id": "meadow:wooden_warped_milk_bucket",
+            "required": false
+        },
+        {
+            "id": "meadow:wooden_grain_milk_bucket",
+            "required": false
+        },
+        {
+            "id": "meadow:wooden_amethyst_milk_bucket",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:strawberry",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:lettuce",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:tomato",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:corn",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:onion",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:kernels",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:butter",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:minced_beef",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:lamb_ham",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:bacon",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:chicken_parts",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:dough",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:raw_pasta",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:farmer_salad",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:goulash",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:simple_tomato_soup",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:barley_soup",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:onion_soup",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:potato_soup",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:pasta_with_onion_sauce",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:corn_grits",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:oatmeal_with_strawberries",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:sausage_with_oat_patty",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:lamb_with_corn",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:beef_patty_with_vegetables",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:barley_patties_with_potatoes",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:bacon_with_eggs",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:chicken_wrapped_in_bacon",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:cooked_salmon",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:cooked_cod",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:roasted_chicken",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:oat_pancake",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:roasted_corn",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:potato_with_roast_meat",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:baked_lamb_ham",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:farmers_breakfast",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:stuffed_chicken",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:stuffed_rabbit",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:grandmothers_strawberry_cake",
+            "required": false
+        },
+        {
+            "id": "farm_and_charm:farmers_bread",
+            "required": false
+        },
+        {
+            "id": "bakery:croissant",
+            "required": false
+        },
+        {
+            "id": "bakery:crusty_bread",
+            "required": false
+        },
+        {
+            "id": "bakery:bread",
+            "required": false
+        },
+        {
+            "id": "bakery:baguette",
+            "required": false
+        },
+        {
+            "id": "bakery:toast",
+            "required": false
+        },
+        {
+            "id": "bakery:braided_bread",
+            "required": false
+        },
+        {
+            "id": "bakery:waffle",
+            "required": false
+        },
+        {
+            "id": "bakery:bun",
+            "required": false
+        },
+        {
+            "id": "bakery:misslilitu_biscuit",
+            "required": false
+        },
+        {
+            "id": "bakery:strawberry_cake_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:sweetberry_cake_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:chocolate_cake_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:chocolate_gateau_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:bundt_cake_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:linzer_tart_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:apple_pie_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:glowberry_pie_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:chocolate_tart_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:pudding_slice",
+            "required": false
+        },
+        {
+            "id": "bakery:strawberry_glazed_cookie",
+            "required": false
+        },
+        {
+            "id": "bakery:sweetberry_glazed_cookie",
+            "required": false
+        },
+        {
+            "id": "bakery:chocolate_glazed_cookie",
+            "required": false
+        },
+        {
+            "id": "bakery:strawberry_cupcake",
+            "required": false
+        },
+        {
+            "id": "bakery:sweetberry_cupcake",
+            "required": false
+        },
+        {
+            "id": "bakery:chocolate_cupcake",
+            "required": false
+        },
+        {
+            "id": "bakery:cornet",
+            "required": false
+        },
+        {
+            "id": "bakery:jam_roll",
+            "required": false
+        },
+        {
+            "id": "bakery:chocolate_truffle",
+            "required": false
+        },
+        {
+            "id": "bakery:cake_dough",
+            "required": false
+        },
+        {
+            "id": "bakery:sweet_dough",
+            "required": false
+        },
+        {
+            "id": "bakery:sandwich",
+            "required": false
+        },
+        {
+            "id": "bakery:vegetable_sandwich",
+            "required": false
+        },
+        {
+            "id": "bakery:grilled_salmon_sandwich",
+            "required": false
+        },
+        {
+            "id": "bakery:grilled_bacon_sandwich",
+            "required": false
+        },
+        {
+            "id": "bakery:bread_with_jam",
+            "required": false
+        },
+        {
+            "id": "candlelight:tomato_soup",
+            "required": false
+        },
+        {
+            "id": "candlelight:mushroom_soup",
+            "required": false
+        },
+        {
+            "id": "candlelight:pasta_with_mozzarella",
+            "required": false
+        },
+        {
+            "id": "candlelight:bolognese",
+            "required": false
+        },
+        {
+            "id": "candlelight:beef_with_mushroom_in_wine_and_potatoes",
+            "required": false
+        },
+        {
+            "id": "candlelight:pasta_with_bolognese",
+            "required": false
+        },
+        {
+            "id": "candlelight:roastbeef_with_glazed_carrots",
+            "required": false
+        },
+        {
+            "id": "candlelight:roasted_lamb_with_lettuce",
+            "required": false
+        },
+        {
+            "id": "candlelight:fillet_steak",
+            "required": false
+        },
+        {
+            "id": "candlelight:tropical_fish_supreme",
+            "required": false
+        },
+        {
+            "id": "candlelight:chicken_alfredo",
+            "required": false
+        },
+        {
+            "id": "candlelight:salmon_on_white_wine",
+            "required": false
+        },
+        {
+            "id": "candlelight:chicken_with_vegetables",
+            "required": false
+        },
+        {
+            "id": "candlelight:pork_ribs",
+            "required": false
+        },
+        {
+            "id": "candlelight:lasagne",
+            "required": false
+        },
+        {
+            "id": "candlelight:beef_wellington",
+            "required": false
+        },
+        {
+            "id": "candlelight:mozzarella",
+            "required": false
+        },
+        {
+            "id": "candlelight:khinkali",
+            "required": false
+        },
+        {
+            "id": "candlelight:beetroot_salad",
+            "required": false
+        },
+        {
+            "id": "candlelight:chicken_teriyaki",
+            "required": false
+        },
+        {
+            "id": "candlelight:salad",
+            "required": false
+        },
+        {
+            "id": "candlelight:beef_tartare",
+            "required": false
+        },
+        {
+            "id": "candlelight:pasta_with_lettuce",
+            "required": false
+        },
+        {
+            "id": "candlelight:omelet",
+            "required": false
+        },
+        {
+            "id": "candlelight:harvest_plate",
+            "required": false
+        },
+        {
+            "id": "candlelight:chocolate_mousse",
+            "required": false
+        },
+        {
+            "id": "candlelight:fresh_garden_salad",
+            "required": false
+        },
+        {
+            "id": "candlelight:tomato_mozzarella_salad",
+            "required": false
+        },
+        {
+            "id": "candlelight:chocolate_box",
+            "required": false
+        },
+        {
+            "id": "brewery:sausage",
+            "required": false
+        },
+        {
+            "id": "brewery:pretzel",
+            "required": false
+        },
+        {
+            "id": "brewery:pork_knuckle",
+            "required": false
+        },
+        {
+            "id": "brewery:fried_chicken",
+            "required": false
+        },
+        {
+            "id": "brewery:half_chicken",
+            "required": false
+        },
+        {
+            "id": "brewery:mashed_potatoes",
+            "required": false
+        },
+        {
+            "id": "brewery:potato_salad",
+            "required": false
+        },
+        {
+            "id": "brewery:dumplings",
+            "required": false
+        },
+        {
+            "id": "brewery:hops",
+            "required": false
+        }
     ]
 }

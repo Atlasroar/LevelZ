@@ -1,3 +1,15 @@
+## 2.5.1
+### Added:
+- Added optional Food Spoilage datapack support (no hard dependency) for food items from several popular farming/cooking mods, so they spoil (or are correctly exempted from spoiling) automatically when installed alongside WandererZ:
+  - [Farmer's Delight Refabricated](https://github.com/MehVahdJukaar/FarmersDelightRefabricated) — raw/cooked dishes and ingredients now spoil; Smoked Ham is exempted as a cured/preserved food
+  - [HerbalBrews](https://github.com/Let-s-Do-Collection/HerbalBrews) — fresh herbs and brewed teas/coffee spoil; dried teas are exempted
+  - [Vinery](https://github.com/Let-s-Do-Collection/Vinery) — fresh grapes, cherries, and juices spoil; all fermented wines/ciders/mead are exempted
+  - [Meadow](https://github.com/Let-s-Do-Collection/Meadow) — fresh cheeses, milk, and buffalo meat spoil
+  - [FarmAndCharm](https://github.com/Let-s-Do-Collection/FarmAndCharm) — fresh produce and dishes spoil; dry pantry staples (flour, yeast, barley, oat) are exempted
+  - [Bakery](https://github.com/Let-s-Do-Collection/Bakery) — fresh baked goods spoil; shelf-stable jams are exempted
+  - [Candlelight](https://github.com/Let-s-Do-Collection/Candlelight) — fine-dining dishes spoil
+  - [Brewery](https://github.com/Let-s-Do-Collection/Brewery) — fresh snacks/dishes and raw hops spoil; beers and whiskeys are exempted
+
 ## 2.5.0
 ### Changed:
 - Fully spoiled food (0% freshness) now turns into Rotten Flesh instead of becoming a "spoiled" variant of itself
