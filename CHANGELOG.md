@@ -1,3 +1,10 @@
+## 2.1.1
+### Added:
+- Explicit Mod Menu support: declared as a `suggests` dependency in `fabric.mod.json` so Mod Menu surfaces WandererZ as a recommended companion mod
+### Changed:
+- Bumped the (optional) Mod Menu dependency from 7.0.0 to 7.2.2, the latest release for Minecraft 1.20.1
+- Documented Mod Menu in the README's compatibility/installation sections
+
 ## 2.1.0
 ### Added:
 - Integrated Tiered directly into WandererZ (random item rarity tiers with bonus attributes, anvil reforging, Smithing-skill/Luck-weighted reroll odds, tooltip tier borders), no separate download required anymore

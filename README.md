@@ -19,8 +19,8 @@ required.
   your smithing skill level and luck).
 - **Deep configurability** — every system (leveling, jobs, difficulty scaling, tiering) ships its own config
   screen via Mod Menu / Cloth Config, and most default settings can be overridden per-world with datapacks.
-- **Wide compatibility** — built-in support/compat hooks for Trinkets, REI, EMI, Jade, WTHIT, Origins,
-  TreeChop, Farmer's Delight, FallingTree, Numismatic Overhaul, EasyAnvils, TooltipFix, and more.
+- **Wide compatibility** — built-in support/compat hooks for Mod Menu, Trinkets, REI, EMI, Jade, WTHIT,
+  Origins, TreeChop, Farmer's Delight, FallingTree, Numismatic Overhaul, EasyAnvils, TooltipFix, and more.
 
 ### Installation
 
@@ -30,6 +30,9 @@ WandererZ is a mod built for the [Fabric Loader](https://fabricmc.net/). It requ
 [LibZ](https://www.curseforge.com/minecraft/mc-mods/libz), and
 [AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag) to be installed separately; all other
 dependencies are optional compatibility hooks installed with the mod.
+[Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) is optional but recommended — if present,
+it gives you an in-game "WandererZ" entry that opens a chooser for the WandererZ, Jobs, RPG Difficulty, and
+Tiered config screens. Without it, those configs can still be edited directly via their `config/*.json` files.
 
 ### License
 
