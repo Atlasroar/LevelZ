@@ -13,8 +13,9 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
+import net.rpgdifficulty.config.RpgDifficultyConfigScreen;
 
-// Provides the mods menu config screen for both LevelZ and the merged JobsAddon settings.
+// Provides the mods menu config screen for LevelZ and the merged JobsAddon and RpgDifficulty settings.
 @Environment(EnvType.CLIENT)
 public class ModMenuIntegration implements ModMenuApi {
 
@@ -47,7 +48,10 @@ public class ModMenuIntegration implements ModMenuApi {
             this.addDrawableChild(ButtonWidget.builder(Text.translatable("config.levelz.category.jobsaddon"),
                     (button) -> this.client.setScreen(AutoConfig.getConfigScreen(JobsAddonConfig.class, this).get())).dimensions(centerX - 100, y + 24, 200, 20).build());
 
-            this.addDrawableChild(ButtonWidget.builder(ScreenTexts.DONE, (button) -> this.client.setScreen(this.parent)).dimensions(centerX - 100, y + 48, 200, 20).build());
+            this.addDrawableChild(ButtonWidget.builder(Text.translatable("config.levelz.category.rpgdifficulty"),
+                    (button) -> this.client.setScreen(RpgDifficultyConfigScreen.create(this))).dimensions(centerX - 100, y + 48, 200, 20).build());
+
+            this.addDrawableChild(ButtonWidget.builder(ScreenTexts.DONE, (button) -> this.client.setScreen(this.parent)).dimensions(centerX - 100, y + 72, 200, 20).build());
         }
 
         @Override
