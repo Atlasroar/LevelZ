@@ -1,3 +1,15 @@
+## 2.3.0
+### Added:
+- Integrated SpoiledZ directly into WandererZ (seasons-based food spoilage system: items spoil over time with cake, furnace/campfire/crafting-result, ground-item, and container tracking), no separate download required anymore
+- Added a sixth mod menu button to choose the Food Spoilage config screen
+- Added a "SpoiledZ datapacks" section to the Datapack Creation developer wiki page, plus new Player/Developer SpoiledZ wiki pages
+### Changed:
+- Added the `maven.siphalor.de` Maven repository (required to resolve the bundled Capsaicin dependency)
+### Dependencies:
+- Added a required separate dependency on [Fabric Seasons](https://modrinth.com/mod/fabric-seasons), which SpoiledZ's spoilage timing is based on
+- Bundled [Capsaicin](https://github.com/Siphalor/capsaicin) directly into the jar (no separate install needed), providing the food-eaten/food-properties event hooks
+- Added optional soft-compat with Expanded Delight and Vinery (Farmer's Delight compat was already present)
+
 ## 2.2.0
 ### Added:
 - Integrated PartyAddon directly into WandererZ (player parties/groups, invite/join/leave/kick, shared vanilla and WandererZ XP distribution among group members, group HUD), no separate download required anymore

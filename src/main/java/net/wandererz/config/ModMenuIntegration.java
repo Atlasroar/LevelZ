@@ -15,9 +15,10 @@ import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
 import net.partyaddon.config.PartyAddonConfig;
 import net.rpgdifficulty.config.RpgDifficultyConfigScreen;
+import net.spoiledz.config.SpoiledZConfig;
 import draylar.tiered.config.TieredConfig;
 
-// Provides the mods menu config screen for WandererZ and the merged JobsAddon, RpgDifficulty, Tiered and PartyAddon settings.
+// Provides the mods menu config screen for WandererZ and the merged JobsAddon, RpgDifficulty, Tiered, PartyAddon and SpoiledZ settings.
 @Environment(EnvType.CLIENT)
 public class ModMenuIntegration implements ModMenuApi {
 
@@ -59,7 +60,10 @@ public class ModMenuIntegration implements ModMenuApi {
             this.addDrawableChild(ButtonWidget.builder(Text.translatable("config.wandererz.category.partyaddon"),
                     (button) -> this.client.setScreen(AutoConfig.getConfigScreen(PartyAddonConfig.class, this).get())).dimensions(centerX - 100, y + 96, 200, 20).build());
 
-            this.addDrawableChild(ButtonWidget.builder(ScreenTexts.DONE, (button) -> this.client.setScreen(this.parent)).dimensions(centerX - 100, y + 120, 200, 20).build());
+            this.addDrawableChild(ButtonWidget.builder(Text.translatable("config.wandererz.category.spoiledz"),
+                    (button) -> this.client.setScreen(AutoConfig.getConfigScreen(SpoiledZConfig.class, this).get())).dimensions(centerX - 100, y + 120, 200, 20).build());
+
+            this.addDrawableChild(ButtonWidget.builder(ScreenTexts.DONE, (button) -> this.client.setScreen(this.parent)).dimensions(centerX - 100, y + 144, 200, 20).build());
         }
 
         @Override

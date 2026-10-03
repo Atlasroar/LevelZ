@@ -15,6 +15,7 @@
   "config.wandererz.category.rpgdifficulty": "Rpg Difficulty",
   "config.wandererz.category.tiered": "Tiered",
   "config.wandererz.category.partyaddon": "Party",
+  "config.wandererz.category.spoiledz": "Food Spoilage",
 
   "text.autoconfig.wandererz.category.gui_settings": "GUI Settings",
   "text.autoconfig.wandererz.category.default": "Skill Settings",
