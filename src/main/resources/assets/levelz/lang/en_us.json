@@ -9,6 +9,10 @@
 
   "text.autoconfig.levelz.title": "LevelZ Config",
 
+  "config.levelz.title": "LevelZ Settings",
+  "config.levelz.category.levelz": "LevelZ",
+  "config.levelz.category.jobsaddon": "Jobs",
+
   "text.autoconfig.levelz.category.gui_settings": "GUI Settings",
   "text.autoconfig.levelz.category.default": "Skill Settings",
   "text.autoconfig.levelz.category.level_settings": "Level Settings",
