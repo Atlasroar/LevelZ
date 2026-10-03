@@ -34,8 +34,8 @@
     "text.autoconfig.rpgdifficulty.option.moreLootChance": "Mais chance de saque",
     "text.autoconfig.rpgdifficulty.option.maxLootChance": "Chance máxima de saque",
     "text.autoconfig.rpgdifficulty.option.chanceForEachItem": "Chance para cada item",
-    "text.autoconfig.rpgdifficulty.option.levelZLevelFactor": "Fator de Nível LevelZ",
-    "text.autoconfig.rpgdifficulty.option.levelZPlayerRadius": "Raio do jogador LevelZ",
+    "text.autoconfig.rpgdifficulty.option.levelZLevelFactor": "Fator de Nível WandererZ",
+    "text.autoconfig.rpgdifficulty.option.levelZPlayerRadius": "Raio do jogador WandererZ",
 
     "text.autoconfig.rpgdifficulty.option.allowSpecialZombie": "Permitir Zumbi Especial",
     "text.autoconfig.rpgdifficulty.option.bigZombieChance": "Grande chance de zumbi",

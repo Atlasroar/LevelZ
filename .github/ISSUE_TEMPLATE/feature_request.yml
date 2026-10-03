@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an idea or improvement for LevelZ (including Jobs)
+description: Suggest an idea or improvement for WandererZ (including Jobs and RPG Difficulty)
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
@@ -32,8 +32,9 @@ body:
     attributes:
       label: Which area does this affect?
       options:
-        - LevelZ (core leveling/skills)
+        - WandererZ (core leveling/skills)
         - Jobs (integrated JobsAddon features)
+        - RPG Difficulty (integrated RpgDifficulty features)
         - Both / Unsure
     validations:
       required: true

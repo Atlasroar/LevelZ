@@ -30,7 +30,7 @@
     "text.autoconfig.jobsaddon.option.warriorXP": "战士 XP",
 
     "text.autoconfig.jobsaddon.option.xpMultiplicator": "每升一级奖励经验乘数（等级*乘数）",
-    "text.autoconfig.jobsaddon.option.levelZXPMultiplicator": "LevelZ 经验乘数（等级*乘数）",
+    "text.autoconfig.jobsaddon.option.levelZXPMultiplicator": "WandererZ 经验乘数（等级*乘数）",
     "text.autoconfig.jobsaddon.option.moneyMultiplicator": "钱币(Numismatic Overhaul 模组)乘数（等级*乘数）",
     "text.autoconfig.jobsaddon.option.allow_max_lvl_progress": "添加进度: 最高等级",
 

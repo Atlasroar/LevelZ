@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a problem with LevelZ (including the integrated Jobs features)
+description: Report a problem with WandererZ (including the integrated Jobs and RPG Difficulty features)
 title: "[Bug]: "
 labels: ["bug"]
 body:
@@ -10,9 +10,9 @@ body:
   - type: input
     id: mod-version
     attributes:
-      label: LevelZ version
-      description: The exact mod version/jar name you are using (e.g. levelz-1.5.0+1.20.1.jar)
-      placeholder: levelz-1.5.0+1.20.1.jar
+      label: WandererZ version
+      description: The exact mod version/jar name you are using (e.g. wandererz-1.7.0+1.20.1.jar)
+      placeholder: wandererz-1.7.0+1.20.1.jar
     validations:
       required: true
   - type: input

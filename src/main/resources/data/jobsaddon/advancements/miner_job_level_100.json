@@ -1,11 +1,11 @@
 {
     "parent": "minecraft:adventure/root",
     "rewards": {
-        "function": "levelz:level100"
+        "function": "wandererz:level100"
     },
     "display": {
         "icon": {
-            "item": "levelz:rare_candy"
+            "item": "wandererz:rare_candy"
         },
         "title": {
             "translate": "advancements.adventure.miner_level_100.title"

@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "#levelz:farm_items",
+        "#wandererz:farm_items",
         "minecraft:grass",
         "minecraft:seagrass",
         "minecraft:sweet_berries",

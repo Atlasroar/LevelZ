@@ -1,46 +1,46 @@
 {
   "schemaVersion": 1,
-  "id": "levelz",
+  "id": "wandererz",
   "version": "${version}",
-  "name": "LevelZ",
+  "name": "WandererZ",
   "description": "Adds player levels, now with integrated Jobs and RPG Difficulty",
   "authors": [
     "Globox_Z"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/levelz",
-    "sources": "https://github.com/Globox1997/LevelZ",
-    "issues": "https://github.com/Globox1997/LevelZ/issues"
+    "homepage": "https://github.com/Atlasroar/LevelZ",
+    "sources": "https://github.com/Atlasroar/LevelZ",
+    "issues": "https://github.com/Atlasroar/LevelZ/issues"
   },
   "license": "GPLv3",
-  "icon": "assets/levelz/icon.png",
+  "icon": "assets/wandererz/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.levelz.LevelzMain",
+      "net.wandererz.WandererzMain",
       "net.jobsaddon.JobsAddonMain",
       "net.rpgdifficulty.RpgDifficultyMain"
     ],
     "client": [
-      "net.levelz.LevelzClient",
+      "net.wandererz.WandererzClient",
       "net.jobsaddon.JobsAddonClient",
       "net.rpgdifficulty.RpgDifficultyClient"
     ],
     "modmenu": [
-      "net.levelz.config.ModMenuIntegration"
+      "net.wandererz.config.ModMenuIntegration"
     ],
     "emi": [
-      "net.levelz.compat.LevelzEmiPlugin"
+      "net.wandererz.compat.WandererzEmiPlugin"
     ],
     "rei_client": [
-      "net.levelz.compat.LevelzReiPlugin"
+      "net.wandererz.compat.WandererzReiPlugin"
     ],
     "jade": [
-      "net.levelz.waila.LevelJadePlugin"
+      "net.wandererz.waila.LevelJadePlugin"
     ]
   },
   "mixins": [
-    "levelz.mixins.json",
+    "wandererz.mixins.json",
     "jobsaddon.mixins.json",
     "rpgdifficulty.mixins.json"
   ],
@@ -54,14 +54,10 @@
   },
   "suggests": {},
   "custom": {
-    "mc-publish": {
-      "modrinth": "EFtixeiF",
-      "curseforge": 517130
-    },
     "waila:plugins": {
-      "id": "levelz:plugin",
+      "id": "wandererz:plugin",
       "environment": "client",
-      "initializer": "net.levelz.waila.LevelWailaPlugin"
+      "initializer": "net.wandererz.waila.LevelWailaPlugin"
     }
   }
 }
