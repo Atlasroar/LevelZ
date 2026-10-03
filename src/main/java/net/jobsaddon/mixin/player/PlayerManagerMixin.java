@@ -13,7 +13,7 @@ import net.jobsaddon.access.JobsManagerAccess;
 import net.jobsaddon.init.CriteriaInit;
 import net.jobsaddon.jobs.JobsManager;
 import net.jobsaddon.network.JobsServerPacket;
-import net.levelz.init.ConfigInit;
+import net.wandererz.init.ConfigInit;
 import net.minecraft.network.ClientConnection;
 import net.minecraft.scoreboard.ScoreboardPlayerScore;
 import net.minecraft.server.PlayerManager;

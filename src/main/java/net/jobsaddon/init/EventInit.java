@@ -44,35 +44,35 @@ public class EventInit {
             });
         }
         if (FabricLoader.getInstance().isModLoaded("bakery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "bakery_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "bakery_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("betterend")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "betterend_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "betterend_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("betternether")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "betternether_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "betternether_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("candlelight")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "candlelight_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "candlelight_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("earlystage")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "earlystage_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "earlystage_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("snuffles")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "snuffles_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "snuffles_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("supplementaries")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "supplementaries_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "supplementaries_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
         if (FabricLoader.getInstance().isModLoaded("vinery")) {
-            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "vinery_compat"), FabricLoader.getInstance().getModContainer("levelz").orElseThrow(),
+            ResourceManagerHelper.registerBuiltinResourcePack(new Identifier("jobsaddon", "vinery_compat"), FabricLoader.getInstance().getModContainer("wandererz").orElseThrow(),
                     ResourcePackActivationType.DEFAULT_ENABLED);
         }
     }

@@ -1,0 +1,1 @@
+give @s wandererz:rare_candy

@@ -11,7 +11,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.jobsaddon.init.ConfigInit;
 import net.jobsaddon.init.CriteriaInit;
 import net.jobsaddon.network.JobsServerPacket;
-import net.levelz.access.PlayerSyncAccess;
+import net.wandererz.access.PlayerSyncAccess;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.scoreboard.ScoreboardPlayerScore;
@@ -243,7 +243,7 @@ public class JobsManager {
                 CurrencyComponent playerBalance = ModComponents.CURRENCY.get(playerEntity);
                 playerBalance.silentModify(jobLevel * ConfigInit.CONFIG.moneyMultiplicator);
             }
-            // Add levelz xp
+            // Add wandererz xp
             if (ConfigInit.CONFIG.levelZXPMultiplicator > 0)
                 ((PlayerSyncAccess) playerEntity).addLevelExperience(ConfigInit.CONFIG.levelZXPMultiplicator * jobLevel);
             // Add vanilla xp

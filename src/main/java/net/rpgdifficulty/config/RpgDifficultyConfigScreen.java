@@ -9,7 +9,7 @@ import net.minecraft.client.gui.screen.Screen;
 import net.rpgdifficulty.access.ScreenAccess;
 
 // Builds the RpgDifficulty config screen, including the optional in-game-time clock widget.
-// Factored out of a ModMenuApi entrypoint so it can be reused by LevelZ's combined config chooser.
+// Factored out of a ModMenuApi entrypoint so it can be reused by WandererZ's combined config chooser.
 @Environment(EnvType.CLIENT)
 public class RpgDifficultyConfigScreen {
 

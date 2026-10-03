@@ -2,7 +2,7 @@ package net.jobsaddon.criteria;
 
 import com.google.gson.JsonObject;
 
-import net.levelz.criteria.NumberPredicate;
+import net.wandererz.criteria.NumberPredicate;
 import net.minecraft.advancement.criterion.AbstractCriterion;
 import net.minecraft.advancement.criterion.AbstractCriterionConditions;
 import net.minecraft.predicate.entity.AdvancementEntityPredicateDeserializer;

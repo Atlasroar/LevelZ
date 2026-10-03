@@ -14,7 +14,7 @@ import net.jobsaddon.access.JobsManagerAccess;
 import net.jobsaddon.init.ConfigInit;
 import net.jobsaddon.jobs.JobsManager;
 import net.jobsaddon.network.JobsClientPacket;
-import net.levelz.init.KeyInit;
+import net.wandererz.init.KeyInit;
 import net.libz.api.Tab;
 import net.libz.util.DrawTabHelper;
 import net.minecraft.client.MinecraftClient;
