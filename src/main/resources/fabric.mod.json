@@ -3,7 +3,7 @@
   "id": "wandererz",
   "version": "${version}",
   "name": "WandererZ",
-  "description": "Adds player levels, now with integrated Jobs and RPG Difficulty",
+  "description": "Adds player levels, now with integrated Jobs, RPG Difficulty and Tiered",
   "authors": [
     "Globox_Z"
   ],
@@ -19,12 +19,14 @@
     "main": [
       "net.wandererz.WandererzMain",
       "net.jobsaddon.JobsAddonMain",
-      "net.rpgdifficulty.RpgDifficultyMain"
+      "net.rpgdifficulty.RpgDifficultyMain",
+      "draylar.tiered.Tiered"
     ],
     "client": [
       "net.wandererz.WandererzClient",
       "net.jobsaddon.JobsAddonClient",
-      "net.rpgdifficulty.RpgDifficultyClient"
+      "net.rpgdifficulty.RpgDifficultyClient",
+      "draylar.tiered.TieredClient"
     ],
     "modmenu": [
       "net.wandererz.config.ModMenuIntegration"
@@ -42,7 +44,8 @@
   "mixins": [
     "wandererz.mixins.json",
     "jobsaddon.mixins.json",
-    "rpgdifficulty.mixins.json"
+    "rpgdifficulty.mixins.json",
+    "tiered.mixins.json"
   ],
   "depends": {
     "java": ">=17",
@@ -50,7 +53,8 @@
     "fabric-api": ">=${fabric_version}",
     "fabricloader": ">=${loader_version}",
     "cloth-config2": ">=${cloth_config_version}",
-    "libz": "*"
+    "libz": "*",
+    "autotag-convention": ">=${autotag_version}"
   },
   "suggests": {},
   "custom": {

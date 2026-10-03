@@ -1,3 +1,17 @@
+## 2.1.0
+### Added:
+- Integrated Tiered directly into WandererZ (random item rarity tiers with bonus attributes, anvil reforging, Smithing-skill/Luck-weighted reroll odds, tooltip tier borders), no separate download required anymore
+- Added a fourth mod menu button to choose the Tiered config screen
+- Added `/tiered tier` and `/tiered untier` commands
+- Added a "Tiered datapacks" section to the Datapack Creation developer wiki page, plus new Player/Developer Tiered wiki pages
+### Changed:
+- Tiered's Smithing-skill-weighted reforge bonus now always uses WandererZ player skills instead of the optional compatibility path
+- Bumped Fabric Loom and added the `maven.willbl.dev` Maven repository (required to resolve the AutoTag dependency)
+### Dependencies:
+- Added a required separate dependency on [AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag)
+- Bundled [Reach Entity Attributes](https://github.com/JamiesWhiteShirt/reach-entity-attributes) directly into the jar (no separate install needed)
+- Added optional soft-compat with EasyAnvils and TooltipFix
+
 ### Added:
 - Renamed the project to **WandererZ** (formerly LevelZ) — new title branding, with Jobs and RPG Difficulty still fully integrated
 - New player-facing and developer wiki documentation reflecting the WandererZ branding
