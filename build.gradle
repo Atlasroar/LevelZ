@@ -150,8 +150,17 @@ dependencies {
 	}
 
 	// SpoiledZ (merged from SpoiledZ)
-	// Fabric Seasons (required separate dependency, provides the season/calendar system SpoiledZ's spoilage timing is based on)
+	// Fabric Seasons (optional season provider - provides the season/calendar system SpoiledZ's spoilage timing can use)
 	modCompileOnly modRuntimeOnly ('maven.modrinth:fabric-seasons:2.3+1.20') {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	// Serene Seasons (alternative optional season provider to Fabric Seasons, requires GlitchCore).
+	// Accessed via reflection at runtime (see SereneSeasonsProvider) since its Fabric API is
+	// compiled against Mojang's official mappings, not Yarn, so it can't be modCompileOnly'd here.
+	modRuntimeOnly ('maven.modrinth:serene-seasons:9.1.0.3') {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	modRuntimeOnly ('maven.modrinth:glitchcore:0.0.1.1') {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
 	// Capsaicin (bundled, provides the food-eaten/food-properties event hooks SpoiledZ uses)

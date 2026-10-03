@@ -1,3 +1,12 @@
+## 2.4.0
+### Added:
+- Added support for [Serene Seasons](https://modrinth.com/mod/serene-seasons) as an alternative season provider for the Food Spoilage system (alongside Fabric Seasons) — either one works, picked automatically at startup (Fabric Seasons preferred if both are installed)
+### Changed:
+- Spoilage timing now degrades gracefully instead of crashing if neither Fabric Seasons nor Serene Seasons is installed (spoilage is simply disabled, with a startup warning logged)
+### Dependencies:
+- Loosened Fabric Seasons from a required dependency to an optional one (`suggests`), now that Serene Seasons is a valid alternative
+- Added optional soft-compat with Serene Seasons and its required [GlitchCore](https://modrinth.com/mod/glitchcore) library (accessed via reflection, since Serene Seasons' Fabric API is compiled against Mojang's official mappings rather than Yarn)
+
 ## 2.3.0
 ### Added:
 - Integrated SpoiledZ directly into WandererZ (seasons-based food spoilage system: items spoil over time with cake, furnace/campfire/crafting-result, ground-item, and container tracking), no separate download required anymore

@@ -14,8 +14,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import io.github.lucaargolo.seasons.FabricSeasons;
-import io.github.lucaargolo.seasons.utils.Season;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.registry.RegistryKey;
@@ -35,6 +33,7 @@ import net.minecraft.world.level.ServerWorldProperties;
 import net.minecraft.world.level.storage.LevelStorage;
 import net.minecraft.world.spawner.Spawner;
 import net.spoiledz.access.ServerWorldAccess;
+import net.spoiledz.compat.season.SeasonProviderInit;
 import net.spoiledz.util.SpoiledUtil;
 import net.spoiledz.util.SpoiledUtil.FoodBlockMap;
 
@@ -42,7 +41,7 @@ import net.spoiledz.util.SpoiledUtil.FoodBlockMap;
 public abstract class ServerWorldMixin extends World implements ServerWorldAccess {
 
     @Unique
-    private Season currentSeason = null;
+    private String currentSeason = null;
     @Unique
     private FoodBlockMap foodBlockMap;
 
@@ -60,7 +59,10 @@ public abstract class ServerWorldMixin extends World implements ServerWorldAcces
 
     @Inject(method = "setTimeOfDay", at = @At("HEAD"))
     private void setTimeOfDayMixin(long timeOfDay, CallbackInfo info) {
-        if ((int) timeOfDay % 20 == 0 && this.currentSeason == null || this.currentSeason != FabricSeasons.getCurrentSeason(this)) {
+        if (SeasonProviderInit.PROVIDER == null) {
+            return;
+        }
+        if ((int) timeOfDay % 20 == 0 && this.currentSeason == null || !this.currentSeason.equals(SeasonProviderInit.PROVIDER.getSeasonId(this))) {
             if (this.currentSeason != null) {
                 for (Map.Entry<BlockPos, ItemStack> entry : new ArrayList<>(this.foodBlockMap.getFoodBlockMap().entrySet())) {
                     if (this.getBlockState(entry.getKey()).contains(SpoiledUtil.SPOILED)) {
@@ -74,7 +76,7 @@ public abstract class ServerWorldMixin extends World implements ServerWorldAcces
                     }
                 }
             }
-            this.currentSeason = FabricSeasons.getCurrentSeason(this);
+            this.currentSeason = SeasonProviderInit.PROVIDER.getSeasonId(this);
         }
     }
 

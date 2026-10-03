@@ -60,11 +60,13 @@
     "fabricloader": ">=${loader_version}",
     "cloth-config2": ">=${cloth_config_version}",
     "libz": "*",
-    "autotag-convention": ">=${autotag_version}",
-    "seasons": "*"
+    "autotag-convention": ">=${autotag_version}"
   },
   "suggests": {
-    "modmenu": "*"
+    "modmenu": "*",
+    "seasons": "*",
+    "sereneseasons": "*",
+    "glitchcore": "*"
   },
   "custom": {
     "waila:plugins": {
