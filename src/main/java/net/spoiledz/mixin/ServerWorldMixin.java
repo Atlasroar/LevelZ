@@ -62,7 +62,8 @@ public abstract class ServerWorldMixin extends World implements ServerWorldAcces
         if (SeasonProviderInit.PROVIDER == null) {
             return;
         }
-        if ((int) timeOfDay % 20 == 0 && this.currentSeason == null || !this.currentSeason.equals(SeasonProviderInit.PROVIDER.getSeasonId(this))) {
+        String newSeason = SeasonProviderInit.PROVIDER.getSeasonId(this);
+        if (!newSeason.equals(this.currentSeason)) {
             if (this.currentSeason != null) {
                 for (Map.Entry<BlockPos, ItemStack> entry : new ArrayList<>(this.foodBlockMap.getFoodBlockMap().entrySet())) {
                     if (this.getBlockState(entry.getKey()).contains(SpoiledUtil.SPOILED)) {
@@ -76,7 +77,7 @@ public abstract class ServerWorldMixin extends World implements ServerWorldAcces
                     }
                 }
             }
-            this.currentSeason = SeasonProviderInit.PROVIDER.getSeasonId(this);
+            this.currentSeason = newSeason;
         }
     }
 
