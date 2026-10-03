@@ -1,3 +1,7 @@
+## 2.4.1
+### Fixed:
+- Fixed a server crash (`NullPointerException` in `ServerWorldMixin`) on world load when Serene Seasons (without Fabric Seasons) was the installed season provider, caused by an operator-precedence bug in the season-change check introduced in v2.4.0
+
 ## 2.4.0
 ### Added:
 - Added support for [Serene Seasons](https://modrinth.com/mod/serene-seasons) as an alternative season provider for the Food Spoilage system (alongside Fabric Seasons) — either one works, picked automatically at startup (Fabric Seasons preferred if both are installed)
