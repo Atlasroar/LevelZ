@@ -3,7 +3,7 @@
   "id": "wandererz",
   "version": "${version}",
   "name": "WandererZ",
-  "description": "Adds player levels, now with integrated Jobs, RPG Difficulty, Tiered and Party systems",
+  "description": "Adds player levels, now with integrated Jobs, RPG Difficulty, Tiered, Party and food spoilage systems",
   "authors": [
     "Globox_Z"
   ],
@@ -21,14 +21,16 @@
       "net.jobsaddon.JobsAddonMain",
       "net.rpgdifficulty.RpgDifficultyMain",
       "draylar.tiered.Tiered",
-      "net.partyaddon.PartyAddonMain"
+      "net.partyaddon.PartyAddonMain",
+      "net.spoiledz.SpoiledZMain"
     ],
     "client": [
       "net.wandererz.WandererzClient",
       "net.jobsaddon.JobsAddonClient",
       "net.rpgdifficulty.RpgDifficultyClient",
       "draylar.tiered.TieredClient",
-      "net.partyaddon.PartyAddonClient"
+      "net.partyaddon.PartyAddonClient",
+      "net.spoiledz.SpoiledZClient"
     ],
     "modmenu": [
       "net.wandererz.config.ModMenuIntegration"
@@ -48,7 +50,8 @@
     "jobsaddon.mixins.json",
     "rpgdifficulty.mixins.json",
     "tiered.mixins.json",
-    "partyaddon.mixins.json"
+    "partyaddon.mixins.json",
+    "spoiledz.mixins.json"
   ],
   "depends": {
     "java": ">=17",
@@ -57,7 +60,8 @@
     "fabricloader": ">=${loader_version}",
     "cloth-config2": ">=${cloth_config_version}",
     "libz": "*",
-    "autotag-convention": ">=${autotag_version}"
+    "autotag-convention": ">=${autotag_version}",
+    "seasons": "*"
   },
   "suggests": {
     "modmenu": "*"

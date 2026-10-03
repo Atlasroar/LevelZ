@@ -3,8 +3,8 @@
 # WandererZ
 
 WandererZ (formerly LevelZ) is a Fabric mod which adds player levels and skills, with a job system, RPG-style
-mob difficulty scaling, an item tiering/reforging system, and player parties built directly in — no separate
-addon downloads required.
+mob difficulty scaling, an item tiering/reforging system, player parties, and a seasons-based food spoilage
+system built directly in — no separate addon downloads required.
 
 ### Features
 
@@ -19,34 +19,41 @@ addon downloads required.
   your smithing skill level and luck).
 - **Party** — form parties with other players (invite, join, leave, kick), and share vanilla and WandererZ
   XP picked up by any group member, with a configurable group-size cap, group bonuses, and an on-screen HUD.
-- **Deep configurability** — every system (leveling, jobs, difficulty scaling, tiering, parties) ships its own
-  config screen via Mod Menu / Cloth Config, and most default settings can be overridden per-world with datapacks.
+- **Food Spoilage** — food items spoil over time based on the current season, with cake, furnace/campfire/
+  crafting results, items on the ground, and container contents all tracked; spoiled food can be fed to
+  composters, animals, or thrown away.
+- **Deep configurability** — every system (leveling, jobs, difficulty scaling, tiering, parties, spoilage)
+  ships its own config screen via Mod Menu / Cloth Config, and most default settings can be overridden
+  per-world with datapacks.
 - **Wide compatibility** — built-in support/compat hooks for Mod Menu, Trinkets, REI, EMI, Jade, WTHIT,
-  Origins, TreeChop, Farmer's Delight, FallingTree, Numismatic Overhaul, EasyAnvils, TooltipFix, Clumps,
-  Xaero's World Map, and more.
+  Origins, TreeChop, Farmer's Delight, Expanded Delight, Vinery, FallingTree, Numismatic Overhaul,
+  EasyAnvils, TooltipFix, Clumps, Xaero's World Map, Capsaicin (bundled), and more.
 
 ### Installation
 
 WandererZ is a mod built for the [Fabric Loader](https://fabricmc.net/). It requires
 [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api),
 [Cloth Config API](https://www.curseforge.com/minecraft/mc-mods/cloth-config),
-[LibZ](https://www.curseforge.com/minecraft/mc-mods/libz), and
-[AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag) to be installed separately; all other
-dependencies are optional compatibility hooks installed with the mod.
+[LibZ](https://www.curseforge.com/minecraft/mc-mods/libz),
+[AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag), and
+[Fabric Seasons](https://modrinth.com/mod/fabric-seasons) to be installed separately; all other
+dependencies (including Capsaicin, which powers the food spoilage system) are bundled or optional
+compatibility hooks installed with the mod.
 [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) is optional but recommended — if present,
 it gives you an in-game "WandererZ" entry that opens a chooser for the WandererZ, Jobs, RPG Difficulty,
-Tiered, and Party config screens. Without it, those configs can still be edited directly via their
-`config/*.json` files.
+Tiered, Party, and Food Spoilage config screens. Without it, those configs can still be edited directly via
+their `config/*.json` files.
 
 ### License
 
-WandererZ is licensed under GPLv3. The merged Jobs, RPG Difficulty, Tiered, and Party systems retain their
-original upstream license terms (GPLv3 and MIT respectively) in their source headers/notices.
+WandererZ is licensed under GPLv3. The merged Jobs, RPG Difficulty, Tiered, Party, and Food Spoilage systems
+retain their original upstream license terms (GPLv3 and MIT) in their source headers/notices.
 
 ### Documentation
 
-Full player and developer documentation — including per-skill/job/difficulty/tiering/party configuration
-options, the commands reference, and **datapack creation guides for each of the four merged mods** — lives on
+Full player and developer documentation — including per-skill/job/difficulty/tiering/party/spoilage
+configuration options, the commands reference, and **datapack creation guides for each of the five merged
+mods** — lives on
 the [project wiki](https://github.com/Atlasroar/LevelZ/wiki). Start with the
 [Player Guide](https://github.com/Atlasroar/LevelZ/wiki/Player-Guide) or the
 [Developer Guide](https://github.com/Atlasroar/LevelZ/wiki/Developer-Guide).
