@@ -3,7 +3,7 @@
   "id": "levelz",
   "version": "${version}",
   "name": "LevelZ",
-  "description": "Adds player levels",
+  "description": "Adds player levels, now with integrated Jobs",
   "authors": [
     "Globox_Z"
   ],
@@ -17,10 +17,12 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.levelz.LevelzMain"
+      "net.levelz.LevelzMain",
+      "net.jobsaddon.JobsAddonMain"
     ],
     "client": [
-      "net.levelz.LevelzClient"
+      "net.levelz.LevelzClient",
+      "net.jobsaddon.JobsAddonClient"
     ],
     "modmenu": [
       "net.levelz.config.ModMenuIntegration"
@@ -36,7 +38,8 @@
     ]
   },
   "mixins": [
-    "levelz.mixins.json"
+    "levelz.mixins.json",
+    "jobsaddon.mixins.json"
   ],
   "depends": {
     "java": ">=17",
