@@ -14,6 +14,7 @@
   "config.wandererz.category.jobsaddon": "Jobs",
   "config.wandererz.category.rpgdifficulty": "Rpg Difficulty",
   "config.wandererz.category.tiered": "Tiered",
+  "config.wandererz.category.partyaddon": "Party",
 
   "text.autoconfig.wandererz.category.gui_settings": "GUI Settings",
   "text.autoconfig.wandererz.category.default": "Skill Settings",

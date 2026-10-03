@@ -3,8 +3,8 @@
 # WandererZ
 
 WandererZ (formerly LevelZ) is a Fabric mod which adds player levels and skills, with a job system, RPG-style
-mob difficulty scaling, and an item tiering/reforging system built directly in — no separate addon downloads
-required.
+mob difficulty scaling, an item tiering/reforging system, and player parties built directly in — no separate
+addon downloads required.
 
 ### Features
 
@@ -17,10 +17,13 @@ required.
 - **Tiered** — tools, weapons, armor, and shields can randomly roll one of six rarity tiers (common through
   unique) with bonus attributes, plus an anvil-based reforging system to reroll an item's tier (modified by
   your smithing skill level and luck).
-- **Deep configurability** — every system (leveling, jobs, difficulty scaling, tiering) ships its own config
-  screen via Mod Menu / Cloth Config, and most default settings can be overridden per-world with datapacks.
+- **Party** — form parties with other players (invite, join, leave, kick), and share vanilla and WandererZ
+  XP picked up by any group member, with a configurable group-size cap, group bonuses, and an on-screen HUD.
+- **Deep configurability** — every system (leveling, jobs, difficulty scaling, tiering, parties) ships its own
+  config screen via Mod Menu / Cloth Config, and most default settings can be overridden per-world with datapacks.
 - **Wide compatibility** — built-in support/compat hooks for Mod Menu, Trinkets, REI, EMI, Jade, WTHIT,
-  Origins, TreeChop, Farmer's Delight, FallingTree, Numismatic Overhaul, EasyAnvils, TooltipFix, and more.
+  Origins, TreeChop, Farmer's Delight, FallingTree, Numismatic Overhaul, EasyAnvils, TooltipFix, Clumps,
+  Xaero's World Map, and more.
 
 ### Installation
 
@@ -31,19 +34,20 @@ WandererZ is a mod built for the [Fabric Loader](https://fabricmc.net/). It requ
 [AutoTag](https://www.curseforge.com/minecraft/mc-mods/autotag) to be installed separately; all other
 dependencies are optional compatibility hooks installed with the mod.
 [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) is optional but recommended — if present,
-it gives you an in-game "WandererZ" entry that opens a chooser for the WandererZ, Jobs, RPG Difficulty, and
-Tiered config screens. Without it, those configs can still be edited directly via their `config/*.json` files.
+it gives you an in-game "WandererZ" entry that opens a chooser for the WandererZ, Jobs, RPG Difficulty,
+Tiered, and Party config screens. Without it, those configs can still be edited directly via their
+`config/*.json` files.
 
 ### License
 
-WandererZ is licensed under GPLv3. The merged Jobs, RPG Difficulty, and Tiered systems retain their original
-upstream license terms (GPLv3 and MIT respectively) in their source headers/notices.
+WandererZ is licensed under GPLv3. The merged Jobs, RPG Difficulty, Tiered, and Party systems retain their
+original upstream license terms (GPLv3 and MIT respectively) in their source headers/notices.
 
 ### Documentation
 
-Full player and developer documentation — including per-skill/job/difficulty/tiering configuration options, the
-commands reference, and **datapack creation guides for each of the four merged mods** — lives on the
-[project wiki](https://github.com/Atlasroar/LevelZ/wiki). Start with the
+Full player and developer documentation — including per-skill/job/difficulty/tiering/party configuration
+options, the commands reference, and **datapack creation guides for each of the four merged mods** — lives on
+the [project wiki](https://github.com/Atlasroar/LevelZ/wiki). Start with the
 [Player Guide](https://github.com/Atlasroar/LevelZ/wiki/Player-Guide) or the
 [Developer Guide](https://github.com/Atlasroar/LevelZ/wiki/Developer-Guide).
 
@@ -59,4 +63,6 @@ commands reference, and **datapack creation guides for each of the four merged m
 `/jobmanager playername get jobname` — Print the specific job level\
 `/info material` — Print the material string of the item in hand\
 `/tiered tier playername common|uncommon|rare|epic|legendary|unique` — Force the player's held item to a tier\
-`/tiered untier playername` — Remove the tier from the player's held item
+`/tiered untier playername` — Remove the tier from the player's held item\
+`/party join` — Accept your current group invitation\
+`/party leave` — Leave your current group

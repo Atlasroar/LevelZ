@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.partyaddon.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "plugin": "net.partyaddon.mixin.PartyAddonMixinPlugin",
+  "mixins": [
+    "PlayerManagerMixin",
+    "PlayerEntityMixin",
+    "ServerPlayerEntityMixin",
+    "ExperienceOrbEntityMixin",
+    "ServerWorldMixin",
+    "compat.LevelExperienceOrbEntityMixin",
+    "compat.LevelZServerPlayerEntityMixin"
+  ],
+  "client": [
+    "compat.GuiMapMixin",
+    "compat.ControlsHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

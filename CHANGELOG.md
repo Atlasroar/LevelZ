@@ -1,3 +1,14 @@
+## 2.2.0
+### Added:
+- Integrated PartyAddon directly into WandererZ (player parties/groups, invite/join/leave/kick, shared vanilla and WandererZ XP distribution among group members, group HUD), no separate download required anymore
+- Added a fifth mod menu button to choose the Party config screen
+- Added `/party join` and `/party leave` commands
+- Added a Player/Developer PartyAddon wiki page
+### Changed:
+- PartyAddon's shared XP distribution now always uses WandererZ player experience instead of the optional compatibility path
+### Dependencies:
+- Added optional soft-compat with Clumps (clumped XP orb sharing) and Xaero's World Map (group member map markers)
+
 ## 2.1.1
 ### Added:
 - Explicit Mod Menu support: declared as a `suggests` dependency in `fabric.mod.json` so Mod Menu surfaces WandererZ as a recommended companion mod

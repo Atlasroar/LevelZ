@@ -3,7 +3,7 @@
   "id": "wandererz",
   "version": "${version}",
   "name": "WandererZ",
-  "description": "Adds player levels, now with integrated Jobs, RPG Difficulty and Tiered",
+  "description": "Adds player levels, now with integrated Jobs, RPG Difficulty, Tiered and Party systems",
   "authors": [
     "Globox_Z"
   ],
@@ -20,13 +20,15 @@
       "net.wandererz.WandererzMain",
       "net.jobsaddon.JobsAddonMain",
       "net.rpgdifficulty.RpgDifficultyMain",
-      "draylar.tiered.Tiered"
+      "draylar.tiered.Tiered",
+      "net.partyaddon.PartyAddonMain"
     ],
     "client": [
       "net.wandererz.WandererzClient",
       "net.jobsaddon.JobsAddonClient",
       "net.rpgdifficulty.RpgDifficultyClient",
-      "draylar.tiered.TieredClient"
+      "draylar.tiered.TieredClient",
+      "net.partyaddon.PartyAddonClient"
     ],
     "modmenu": [
       "net.wandererz.config.ModMenuIntegration"
@@ -45,7 +47,8 @@
     "wandererz.mixins.json",
     "jobsaddon.mixins.json",
     "rpgdifficulty.mixins.json",
-    "tiered.mixins.json"
+    "tiered.mixins.json",
+    "partyaddon.mixins.json"
   ],
   "depends": {
     "java": ">=17",
