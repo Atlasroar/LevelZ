@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a problem with LevelZ (including the integrated Jobs features)
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below so it can be investigated quickly.
+  - type: input
+    id: mod-version
+    attributes:
+      label: LevelZ version
+      description: The exact mod version/jar name you are using (e.g. levelz-1.5.0+1.20.1.jar)
+      placeholder: levelz-1.5.0+1.20.1.jar
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft version
+      placeholder: 1.20.1
+    validations:
+      required: true
+  - type: input
+    id: fabric-loader-version
+    attributes:
+      label: Fabric Loader version
+    validations:
+      required: true
+  - type: textarea
+    id: other-mods
+    attributes:
+      label: Other mods installed
+      description: List any other mods installed, especially compat mods (Farmer's Delight, FallingTree, TreeChop, Harvest Scythes, Numismatic Overhaul, etc.)
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps to reproduce the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / crash report
+      description: Please paste a link to a [gist](https://gist.github.com) with your latest.log or crash-report, or drag-and-drop the file here.
+      render: shell
+    validations:
+      required: false
