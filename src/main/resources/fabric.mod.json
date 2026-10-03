@@ -3,7 +3,7 @@
   "id": "levelz",
   "version": "${version}",
   "name": "LevelZ",
-  "description": "Adds player levels, now with integrated Jobs",
+  "description": "Adds player levels, now with integrated Jobs and RPG Difficulty",
   "authors": [
     "Globox_Z"
   ],
@@ -18,11 +18,13 @@
   "entrypoints": {
     "main": [
       "net.levelz.LevelzMain",
-      "net.jobsaddon.JobsAddonMain"
+      "net.jobsaddon.JobsAddonMain",
+      "net.rpgdifficulty.RpgDifficultyMain"
     ],
     "client": [
       "net.levelz.LevelzClient",
-      "net.jobsaddon.JobsAddonClient"
+      "net.jobsaddon.JobsAddonClient",
+      "net.rpgdifficulty.RpgDifficultyClient"
     ],
     "modmenu": [
       "net.levelz.config.ModMenuIntegration"
@@ -39,7 +41,8 @@
   },
   "mixins": [
     "levelz.mixins.json",
-    "jobsaddon.mixins.json"
+    "jobsaddon.mixins.json",
+    "rpgdifficulty.mixins.json"
   ],
   "depends": {
     "java": ">=17",

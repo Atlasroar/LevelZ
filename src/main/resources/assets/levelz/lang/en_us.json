@@ -12,6 +12,7 @@
   "config.levelz.title": "LevelZ Settings",
   "config.levelz.category.levelz": "LevelZ",
   "config.levelz.category.jobsaddon": "Jobs",
+  "config.levelz.category.rpgdifficulty": "Rpg Difficulty",
 
   "text.autoconfig.levelz.category.gui_settings": "GUI Settings",
   "text.autoconfig.levelz.category.default": "Skill Settings",
